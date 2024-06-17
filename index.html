@@ -4,28 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-tarefas</title>
-    
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="impar-par">
-        <h1>Multi - Tarefas</h1>
+    <h1>Multi - Tarefas</h1>
+    <div class="caixa">
+        <div class="impar-par">
+            
 
-        <h2>Digite um número inteiro:</h2>
-        <input type="number" id="nInteiro">
-        <button id="par__impar">Par ou Ímpar?</button>
-        <br><br><br><br><br><br>
+            <h2>Digite um número inteiro:</h2>
+            <input type="number" id="nInteiro">
+            <button id="par__impar">Par ou Ímpar?</button>
+        </div>
     </div>
 
-    <div class="maior-menor">
-        <h2>Digite o primeiro número:</h2>
-        <input type="number" id="nMM1">
-        <h2>Digite o segundo número:</h2>
-        <input type="number" id="nMM2">
-        <br><br>
-        <button id="qualMaior">Qual o maior?</button>
-        <br><br><br><br><br><br>
+    <div class="caixa">
+        <div class="maior-menor">
+            <h2>Digite o primeiro número:</h2>
+            <input type="number" id="nMM1">
+            <h2>Digite o segundo número:</h2>
+            <input type="number" id="nMM2">
+            <br><br>
+            <button id="qualMaior">Qual o maior?</button>
+        </div>
     </div>
 
+    <div class="caixa">
+        <div class="pode-votar">
+            <h2>Digite sua data de nascimento:</h2>
+            <input type="date" id="dataNascimento" max="2024-12-30">
+            <button id="podeVotar">Posso votar?</button>
+        </div>
+    </div>
+
+    <div class="caixa">
+        <div class="reajuste-salario">
+            <h2>Digite o atual valor salarial do funcionario:</h2>
+            <input type="number" id="salarioAtual">
+            <h3>Digite a porcentagem de reaujuste:</h3>
+            <input type="number" id="porcentagemReajuste">
+            <br><br>
+            <button id="calculadorSalario">Calcular novo salário</button>
+        </div>
+    </div>
+
+    <div class="caixa">
+        <div class="conversor-dia">
+            <h2>Digite um valor de 1 a 7:</h2>
+            <input type="number" id="numero17" min="1" max="7">
+            <button id="calcularDia">Calcular Dia</button>
+        </div>
+    </div>
 </body>
+
+    <div class="caixa">
+        <div class="ate-chegar">
+            <h2>Escreva um número inteiro positivo</h2>
+            <input type="number" id="numeroParaChegar">
+            <button id="checarNumeros">Checar números anteriores</button>
+        </div>
+    </div>
+
+    
 </html>
