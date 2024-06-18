@@ -7,6 +7,7 @@ const btnCalcularDia = document.querySelector('#calcularDia');
 const btnChecarNumeros = document.querySelector('#checarNumeros');
 const btnSomarAnteriores = document.querySelector('#somarAnterioresNumeros');
 const btnMostrarAnterioresImpares = document.querySelector('#imparAnteriores');
+const btnSepararSomar30 = document.querySelector('#separarNumeros');
 
 btnParImpar.addEventListener('click', () => {
 
@@ -103,4 +104,20 @@ btnMostrarAnterioresImpares.addEventListener('click', () => {
         }
     }
 })
+
+btnSepararSomar30.addEventListener('click', () => {
+    var stringSeparada = document.querySelector('#numeroComTraco').value;
+    var arrayStringSeparada = stringSeparada.split('-');
+    var soma = 0;
+    console.log(arrayStringSeparada);
+    for(var i = 0; i < arrayStringSeparada.length; i++){
+        
+        if(soma + parseInt(arrayStringSeparada[i]) <= 30){
+            soma += parseInt(arrayStringSeparada[i]);
+        }
+        
+    }
+    console.log(soma);
+})
+
 
