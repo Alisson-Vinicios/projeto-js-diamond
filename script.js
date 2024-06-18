@@ -8,6 +8,7 @@ const btnChecarNumeros = document.querySelector('#checarNumeros');
 const btnSomarAnteriores = document.querySelector('#somarAnterioresNumeros');
 const btnMostrarAnterioresImpares = document.querySelector('#imparAnteriores');
 const btnSepararSomar30 = document.querySelector('#separarNumeros');
+const btnSepararNumerosMaior50 = document.querySelector('#separarNumerosMaior50');
 
 btnParImpar.addEventListener('click', () => {
 
@@ -114,10 +115,22 @@ btnSepararSomar30.addEventListener('click', () => {
         
         if(soma + parseInt(arrayStringSeparada[i]) <= 30){
             soma += parseInt(arrayStringSeparada[i]);
-        }
-        
+        }  
     }
     console.log(soma);
 })
 
+btnSepararNumerosMaior50.addEventListener('click', () => {
+    var stringComBarra = document.querySelector('#numeroComBarra').value;
+    var arrayStringComBarra = stringComBarra.split('/');
+    var contador = 0;
+    console.log(arrayStringComBarra);
 
+    for(var i = 0; i < arrayStringComBarra.length; i++){
+        if(parseInt(arrayStringComBarra[i]) >= 50){
+            contador++;
+            console.log(arrayStringComBarra[i]);
+        }  
+    }
+    console.log('Existem essa quantidade de números maiores que 50:', contador);
+})
