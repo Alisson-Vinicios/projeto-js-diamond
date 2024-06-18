@@ -5,6 +5,8 @@ const btnVotar = document.querySelector('#podeVotar');
 const btnCalculadoraSalario = document.querySelector('#calculadorSalario');
 const btnCalcularDia = document.querySelector('#calcularDia');
 const btnChecarNumeros = document.querySelector('#checarNumeros');
+const btnSomarAnteriores = document.querySelector('#somarAnterioresNumeros');
+const btnMostrarAnterioresImpares = document.querySelector('#imparAnteriores');
 
 btnParImpar.addEventListener('click', () => {
 
@@ -80,3 +82,25 @@ btnChecarNumeros.addEventListener('click', () => {
         console.log(i);
     }
 })
+
+btnSomarAnteriores.addEventListener('click', () => {
+    let numeroEscolhido = document.querySelector('#numeroParaSomar').value;
+    var aux = 0;
+    parseInt(numeroEscolhido);
+    console.log(numeroEscolhido);
+    for(var i = 0; i <= numeroEscolhido - 1; i++){
+        aux = parseInt(aux) + parseFloat(i);
+    }
+    console.log(aux);
+})
+
+btnMostrarAnterioresImpares.addEventListener('click', () => {
+    let numeroDesejado8 = document.querySelector('#numeroInteiro8').value;
+    for(var i = 0; i <= numeroDesejado8 - 1; i++){
+        parseInt(i);
+        if((i%2) === 1){
+            console.log(i);
+        }
+    }
+})
+
