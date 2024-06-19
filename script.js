@@ -9,6 +9,7 @@ const btnSomarAnteriores = document.querySelector('#somarAnterioresNumeros');
 const btnMostrarAnterioresImpares = document.querySelector('#imparAnteriores');
 const btnSepararSomar30 = document.querySelector('#separarNumeros');
 const btnSepararNumerosMaior50 = document.querySelector('#separarNumerosMaior50');
+const btnInversor = document.querySelector('#inversor');
 
 btnParImpar.addEventListener('click', () => {
 
@@ -134,3 +135,23 @@ btnSepararNumerosMaior50.addEventListener('click', () => {
     }
     console.log('Existem essa quantidade de números maiores que 50:', contador);
 })
+
+btnInversor.addEventListener('click', () => {
+    var paravraInverter = document.querySelector('#stringInverter').value.split(' ');
+    let resultado = '';
+    
+    for (let i = 0; i < paravraInverter.length; i++) {
+        let palavraInvertida = '';
+        for (let j = paravraInverter[i].length - 1; j >= 0; j--) {
+            palavraInvertida = palavraInvertida + paravraInverter[i][j];
+        }
+        resultado += palavraInvertida;
+
+        if (i < paravraInverter.length - 1) {
+            resultado += ' ';
+        }
+    }
+    console.log(resultado);
+})
+
+
