@@ -10,6 +10,7 @@ const btnMostrarAnterioresImpares = document.querySelector('#imparAnteriores');
 const btnSepararSomar30 = document.querySelector('#separarNumeros');
 const btnSepararNumerosMaior50 = document.querySelector('#separarNumerosMaior50');
 const btnInversor = document.querySelector('#inversor');
+const btnMaiuscula = document.querySelector('#deixarMaiuscula');
 
 btnParImpar.addEventListener('click', () => {
 
